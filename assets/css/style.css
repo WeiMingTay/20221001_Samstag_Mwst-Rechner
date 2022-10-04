@@ -1,0 +1,84 @@
+/* ==========
+Allgemein
+========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--primaryColour);
+    background-image: url(https://images.unsplash.com/photo-1564939558297-fc396f18e5c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+:root {
+    --primaryColour: #F8E0B1;
+    --secondaryColour: #fff;
+}
+/* ==========
+Header
+========== */
+
+/* ==========
+Main
+========== */
+main {
+    margin: 10vh auto;
+    padding: 2rem;
+    width: 70vw;
+    max-width: 450px;
+    border: 10px solid var(--primaryColour);
+    background-color: var(--secondaryColour);
+    accent-color: var(--primaryColour);
+}
+section {
+    margin: 1rem auto;
+}
+section > div, form>div {
+    margin: .25rem auto;
+    background-color: rgba(248,224,177,0.4);
+}
+h1, h2 {
+    text-shadow: 2.5px 2.5px 5px var(--primaryColour) ;
+    transition: all 750ms;
+}
+h3 {
+    transition: all 500ms;
+}
+label {
+    transition: all 1000ms;
+}
+/* -----
+Eingabe
+----- */
+button {
+    padding: .2rem 1rem;
+    border: none;
+    border-radius: 5px 0 5px 0;
+    background-color: rgba(248,224,177,0.4);
+}
+/* -----
+Ausgabe
+----- */
+
+/* ==========
+Media Queries
+========== */
+@media (min-width:600px) {
+    main {
+        margin-right: 20vh;
+    }
+}
+@media (max-width:600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    label {
+        font-size: .8rem;
+    }
+}

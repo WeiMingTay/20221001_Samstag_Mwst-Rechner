@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lev3_1 MwSt-Rechner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/721ed2b8-e5b3-4636-b2c9-64df4735261b.jpeg">
+</head>
+<body>
+    <main>
+        <h1>Mehrwertsteuer-Rechner</h1>
+        <section>
+            <form action="#" onsubmit="return false">
+                <div>
+                    <h3>Was soll berechnet werden?</h3>
+                        <div>
+                            <input type="radio" name="chooseMwst" id="nettoToBrutto" value="netBrut" onclick="bruttoNetto()">
+                            <label for="nettoToBrutto">MwSt aufschlagen (Netto zu Brutto)</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="chooseMwst" id="bruttoToNetto" value="brutNet" onclick="bruttoNetto()">
+                            <label for="bruttoToNetto">MwSt abziehen (Brutto zur Netto)</label>
+                        </div>
+                </div>
+                <div>
+                    <h3>Mehrwertsteuersatz</h3>
+                        <input type="radio" name="mwstSatz" id="mwst19">
+                        <label for="mwst19">19 %</label>
+                        <input type="radio" name="mwstSatz" id="mwst7">
+                        <label for="mwst7">7 %</label>
+                </div>
+                <div>
+                    <h3 id="eingabeWert">Bruttobetrag in Euro</h3>
+                    <input type="number" id="bruttoEingabe" required placeholder=" in Euro">
+                </div>
+            </form>
+            <button onclick="submit()">Berechnen</button>
+        </section>
+        <section>
+            <h2>Ergebnis</h2>
+            <div>
+                <h3>Mehrwertsteuerbetrag</h3>
+                <p id="mwst">€</p>
+            </div>
+            <div>
+                <h3 id="gesamtWert">Nettobetrag</h3>
+                <p id="ausgabe">€</p>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
