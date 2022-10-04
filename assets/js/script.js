@@ -17,10 +17,10 @@ let ausgabeWert = document.getElementById("gesamtWert");
 
 function bruttoNetto() {
     if (bruttoNet.checked) {
-        eingabeWert.innerHTML="Bruttobetrag in Euro"
+        eingabeWert.innerHTML="Bruttobetrag"
         ausgabeWert.innerHTML="Nettobetrag"
     } else if (nettoBrut.checked) {
-        eingabeWert.innerHTML="Nettobetrag in Euro"
+        eingabeWert.innerHTML="Nettobetrag"
         ausgabeWert.innerHTML="Bruttobetrag (Endpreis)"
     }
 }
